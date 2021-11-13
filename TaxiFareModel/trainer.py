@@ -241,9 +241,9 @@ if __name__ == "__main__":
     warnings.simplefilter(action='ignore', category=FutureWarning)
     # Get and clean data
     experiment = "[GB] [LON] [VP] LinearV1"
-    params = dict(nrows=10000,
+    params = dict(nrows=500_000,
                   upload=True,
-                  local=True,  # set to False to get data from GCP (Storage or BigQuery)
+                  local=False,  # set to False to get data from GCP (Storage or BigQuery)
                   gridsearch=True,
                   optimize=True,
                   estimator="xgboost",
