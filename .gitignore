@@ -1,0 +1,4 @@
+mlruns
+*.egg-info
+*__pycache__*
+data
